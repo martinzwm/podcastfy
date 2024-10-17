@@ -39,9 +39,9 @@ class ContentExtractor:
 			bool: True if the source is a valid URL, False otherwise.
 		"""
 		try:
-			# If the source doesn't start with a scheme, add 'https://'
-			if not source.startswith(('http://', 'https://')):
-				source = 'https://' + source
+			# # If the source doesn't start with a scheme, add 'https://'
+			# if not source.startswith(('http://', 'https://')):
+			# 	source = 'https://' + source
 
 			result = urlparse(source)
 			return all([result.scheme, result.netloc])
