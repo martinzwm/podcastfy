@@ -113,7 +113,7 @@ def process_content(
             return audio_file
         else:
             logger.info(f"Transcript generated successfully")
-            return None
+            return random_filename
 
     except Exception as e:
         logger.error(f"An error occurred in the process_content function: {str(e)}")
